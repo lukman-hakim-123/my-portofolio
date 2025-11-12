@@ -1,65 +1,106 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="text-white">
+      {/* Hero Section */}
+      <section className="min-h-screen flex flex-col items-center justify-center bg-[#0d1117] pt-16">
+        {/* Lingkaran cahaya di pojok kiri atas */}
+        <div className="absolute top-8 left-4 w-[200px] h-[200px] rounded-full bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.35),transparent_50%)] blur-2xl"></div>
+
+        {/* Lingkaran cahaya di pojok kanan bawah */}
+        <div className="absolute bottom-24 right-12 w-[200px] h-[200px] rounded-full bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.45),transparent_40%)] blur-2xl"></div>
+
+        {/* Kotak Melayang */}
+        <div className="absolute top-[39%] left-[72.5%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[rgba(56,189,248,0.20)] animate-float-glow"></div>
+
+        {/* Icon */}
+        <div className="flex items-center justify-center w-20 h-20 bg-blue-500/10 border border-blue-400 rounded-xl mb-6 mt-6 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
+          <span className="text-blue-400 text-3xl font-bold select-none -translate-y-[4px]">
+            &lt;/&gt;
+          </span>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+
+        <h1 className="text-7xl font-bold text-white">
+          Hi, I’m <span className=" text-blue-400">Lukman Hakim</span>
+        </h1>
+        <p className="text-zinc-400 mt-6 text-2xl text-center ">
+          An IT graduate and aspiring web developer passionate about
+          <span className="hidden sm:inline">
+            <br />
+          </span>
+          building clean, functional, and modern web applications.
+        </p>
+
+        {/* Tombol-tombol */}
+        <div className="flex gap-4 mt-10">
+          {/* Tombol View My Work */}
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#projects"
+            className="px-8 py-4 bg-blue-500 hover:bg-blue-400 text-white font-medium rounded-lg shadow-md hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            View My Work
           </a>
+
+          {/* Tombol Download CV */}
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/cv.pdf"
+            download
+            className="px-8 py-4 border border-blue-400 text-blue-400 rounded-lg hover:bg-blue-500/10 shadow-[0_0_15px_rgba(56,189,248,0.3)] font-medium transition-all duration-300 select-none"
           >
-            Documentation
+            Download CV
           </a>
         </div>
-      </main>
-    </div>
+
+        <div className="flex items-center justify-center gap-6 mt-10 text-zinc-400 text-sm">
+          {/* Icon 1 + Teks */}
+          <div className="flex items-center gap-1.5">
+            <span className="text-blue-400/70 text-xl font-bold select-none">
+              &lt;/&gt;
+            </span>
+            <span className="text-zinc-400 font-medium text-base">Code</span>
+          </div>
+
+          {/* Icon 2 + Teks */}
+          <div className="flex items-center gap-1.5">
+            <span className="text-violet-400/70 text-xl">🎨</span>
+            <span className="text-zinc-400 font-medium text-base">Design</span>
+          </div>
+
+          {/* Icon 3 + Teks */}
+          <div className="flex items-center gap-1.5">
+            <span className="text-sky-400/70 text-xl">🚀</span>
+            <span className="text-zinc-400 font-medium text-base">Deploy</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-24 bg-[#111b2e]">
+        <h2 className="text-4xl font-bold text-center mb-8">
+          Skills & Technologies
+        </h2>
+        <p className="text-center text-zinc-400">Tools I work with</p>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-24 bg-[#141f33]">
+        <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
+        <p className="text-center text-zinc-400">Some of my work</p>
+      </section>
+
+      {/* About Section */}
+      <section className="py-24 bg-[#162238]">
+        <h2 className="text-4xl font-bold text-center mb-8">About Me</h2>
+        <p className="text-center text-zinc-400 max-w-2xl mx-auto">
+          I’m an IT graduate passionate about creating functional and modern web
+          apps.
+        </p>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-24 bg-[#19283f]">
+        <h2 className="text-4xl font-bold text-center mb-8">Contact</h2>
+        <p className="text-center text-zinc-400">Get in touch!</p>
+      </section>
+    </main>
   );
 }
