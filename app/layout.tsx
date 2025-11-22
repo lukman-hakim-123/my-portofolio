@@ -24,6 +24,11 @@ export default function RootLayout({
       <body className={`${jakarta.variable} antialiased`}>
         <Navbar />
         {children}
+        <footer className="py-6 text-center bg-[#0d1117] border-t border-zinc-800">
+          <p className="text-zinc-500 text-sm">
+            © 2025 Lukman Hakim. All rights reserved.
+          </p>
+        </footer>
       </body>
     </html>
   );
