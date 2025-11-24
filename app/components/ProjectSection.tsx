@@ -1,4 +1,5 @@
 import { projects } from "../data/projects";
+import Image from "next/image";
 
 export default function ProjectSection() {
   return (
@@ -18,11 +19,14 @@ export default function ProjectSection() {
              h-full flex flex-col"
           >
             {/* Image */}
-            <div className="aspect-[16/9] overflow-hidden bg-[#0f1620]">
-              <img
+            <div className="overflow-hidden bg-[#0f1620]">
+              <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.02] antialiased"
+                width={1200}
+                height={675}
+                className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                quality={95}
               />
             </div>
 

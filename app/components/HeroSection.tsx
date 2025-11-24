@@ -21,11 +21,11 @@ export default function HeroSection() {
         Hi, I’m <span className=" text-blue-400">Lukman Hakim</span>
       </h1>
       <p className="text-zinc-400 mt-6 text-2xl text-center ">
-        An IT graduate and aspiring web developer passionate about
+        An IT graduate interested in modern software development,{" "}
         <span className="hidden sm:inline">
           <br />
         </span>
-        building clean, functional, and modern web applications.
+        problem-solving, and building meaningful digital experiences.{" "}
       </p>
 
       {/* Tombol-tombol */}

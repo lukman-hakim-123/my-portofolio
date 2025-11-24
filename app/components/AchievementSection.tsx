@@ -1,4 +1,5 @@
 import { achievements } from "../data/achievement";
+import Image from "next/image";
 
 export default function AchievementSection() {
   return (
@@ -18,11 +19,16 @@ export default function AchievementSection() {
               <p className="text-blue-300 text-sm mb-2">{a.year}</p>
               <p className="text-zinc-400 mb-4">{a.desc}</p>
 
-              <img
-                src={a.certificate}
-                alt="certificate"
-                className="w-48 border border-[#2a3444] rounded-lg shadow-md hover:scale-105 transition"
-              />
+              <div className="w-48 overflow-hidden border border-[#2a3444] rounded-lg shadow-md">
+                <Image
+                  src={a.certificate}
+                  alt="certificate"
+                  width={600} // cukup besar supaya tajam
+                  height={400} // aspek landscape
+                  className="object-contain hover:scale-105 transition duration-300"
+                  quality={95}
+                />
+              </div>
             </div>
           ))}
         </div>
