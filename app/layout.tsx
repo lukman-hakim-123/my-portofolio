@@ -12,6 +12,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Lukman Hakim",
   description: "Website Portofolio Lukman Hakim",
+  icons: { icon: "/logo.png" },
 };
 
 export default function RootLayout({

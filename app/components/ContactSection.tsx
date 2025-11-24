@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
-    <section className="py-24 bg-[#111827]" id="contact">
+    <section className="py-24 bg-[#0f1620]" id="contact">
       <h2 className="text-5xl font-bold text-center mb-8">Let's Connect</h2>
       <p className="text-center text-zinc-400 text-xl">
         I'm always interested in new opportunities and collaborations
@@ -27,7 +27,7 @@ export default function ContactSection() {
         </a>
 
         <a
-          href="mailto:dev.lukman.hakim@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=dev.lukman.hakim@gmail.com"
           target="_blank"
           className="flex items-center gap-2 px-6 py-3 rounded-xl bg-[#1a2332] hover:bg-[#223042] transition border border-[#2a3444]"
         >

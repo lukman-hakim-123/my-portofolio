@@ -30,11 +30,12 @@ export default function Navbar() {
     >
       <div className="w-full flex items-center justify-between py-4 px-4 sm:px-8 lg:px-16">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors"
-        >
-          MyPortofolio
+        <Link href="/" className="flex items-center">
+          <img
+            src="/icons/logo.png"
+            alt="logo"
+            className="h-10 w-10 rounded-full object-cover"
+          />
         </Link>
 
         {/* Menu */}
