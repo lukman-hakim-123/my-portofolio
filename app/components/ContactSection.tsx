@@ -7,7 +7,7 @@ export default function ContactSection() {
       <p className="text-center text-zinc-400 text-xl">
         I'm always interested in new opportunities and collaborations
       </p>
-      <div className="flex justify-center gap-6 mt-10">
+      <div className="flex flex-wrap justify-center gap-4 mt-10 px-4">
         <a
           href="https://github.com/lukman-hakim-123"
           target="_blank"
@@ -35,7 +35,7 @@ export default function ContactSection() {
           Email
         </a>
       </div>
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-12 px-4">
         <a
           href="https://wa.me/6285870939617"
           target="_blank"

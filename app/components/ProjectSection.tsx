@@ -18,11 +18,11 @@ export default function ProjectSection() {
              h-full flex flex-col"
           >
             {/* Image */}
-            <div className="aspect-[16/9] overflow-hidden">
+            <div className="aspect-[16/9] overflow-hidden bg-[#0f1620]">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full object-cover transition-transform duration-300 group-hover:scale-[1.02] antialiased"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02] antialiased"
               />
             </div>
 
