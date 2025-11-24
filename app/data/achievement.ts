@@ -9,7 +9,7 @@ export const achievements = [
     title: "3rd Place – Software Development",
     year: "2024",
     desc: "Achieved 3rd Place in the Software Development competition organized by HIMASIF, Universitas Jember.",
-    certificate: "/images/jember.png",
+    certificate: "/images/univ-jember.png",
   },
   {
     title: "2nd Place – Game & Software Development",

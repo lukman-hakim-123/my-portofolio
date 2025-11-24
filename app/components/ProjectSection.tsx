@@ -22,7 +22,7 @@ export default function ProjectSection() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02] antialiased"
+                className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.02] antialiased"
               />
             </div>
 
