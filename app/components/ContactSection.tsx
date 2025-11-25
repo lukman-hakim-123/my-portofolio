@@ -18,7 +18,7 @@ export default function ContactSection() {
         </a>
 
         <a
-          href="#"
+          href="https://www.linkedin.com/in/lukmanh-id/"
           target="_blank"
           className="flex items-center gap-2 px-6 py-3 rounded-xl bg-[#1a2332] hover:bg-[#223042] transition border border-[#2a3444]"
         >

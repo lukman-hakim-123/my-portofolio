@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +21,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Achievements", href: "#achievements" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
@@ -53,10 +55,29 @@ export default function Navbar() {
         </ul>
 
         {/* Tombol menu mobile */}
-        <button className="md:hidden text-gray-300 hover:text-blue-400">
-          ☰
+        <button
+          className="md:hidden text-gray-300 hover:text-blue-400 text-3xl"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? "✕" : "☰"}
         </button>
       </div>
+
+      {/* Menu Mobile */}
+      {open && (
+        <div className="md:hidden bg-[#0d1117] border-t border-zinc-800 flex flex-col px-6 py-4 space-y-4 text-zinc-300">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setOpen(false)}
+              className="py-1 hover:text-blue-400"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      )}
     </nav>
   );
 }

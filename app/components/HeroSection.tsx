@@ -40,7 +40,8 @@ export default function HeroSection() {
 
         {/* Tombol Download CV */}
         <a
-          href="/cv.pdf"
+          href="https://bit.ly/cv-lukman-hakim"
+          target="_blank"
           download
           className="px-8 py-4 border border-blue-400 text-blue-400 rounded-lg hover:bg-blue-500/10 shadow-[0_0_15px_rgba(56,189,248,0.3)] font-medium transition-all duration-300 select-none"
         >
